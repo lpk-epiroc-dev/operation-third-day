@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Drop-Down Menus</title>
+</head>
+<body>
+    <form id="dataForm">
+
+        <label for="report_id">Report ID:</label>
+        <input type="text" id="report_id" name="report_id">,</input>
+        <br><br>
+
+        <label for="report_type">Report Type:</label>
+        <select id="report_type" name="report_type">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+<!-- We won't need this if the operator is giving us the machine name
+        <label for="machine_type">Machine Type:</label>
+        <select id="machine_type" name="machine_type">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="model">Model:</label>
+        <select id="model" name="model">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="machine_serial_number">Machine Serial Number:</label>
+        <select id="machine_serial_number" name="machine_serial_number">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="machine_item_number">Machine Item Number:</label>
+        <select id="machine_item_number" name="machine_item_number">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+-->
+        <label for="machine_name">Machine Name:</label>
+        <select id="machine_name" name="machine_name">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+<!--
+        <label for="customer">Customer:</label>
+        <select id="customer" name="customer">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="site">Site:</label>
+        <select id="site" name="site">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="commissioning_date">Commissioning Date:</label>
+        <select id="commissioning_date" name="commissioning_date">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="rcs_version">RCS Version:</label>
+        <select id="rcs_version" name="rcs_version">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+-->
+        <label for="delay_event_code">Delay Event Code (if applicable):</label>
+        <input type="text" id="delay_event_code" name="delay_event_code">
+        </input>
+        <br><br>
+
+        <label for="wo_opened_date">Failure Date:</label>
+        <input type="date" id="wo_opened_date" name="wo_opened_date">
+        </input>
+        <br><br>
+
+        <label for="failure_time">Failure Time:</label>
+		<input id="failure_time" type="time" name="failure_time" value="12:00" />
+        </input>
+        <br><br>
+
+        <label for="wo_closed_date">Repair Date:</label>
+        <input type="date" id="wo_closed_date" name="wo_closed_date">
+        </input>
+        <br><br>
+
+        <label for="repair_time">Repair Time:</label>
+		<input id="repair_time" type="time" name="repair_time" value="12:00" />
+        </input>
+        <br><br>
+
+        <label for="meter_reading">Meter Reading:</label>
+		<input type="number" id="meter_reading" name="meter_reading" min="1" max="6">
+        </input>
+        <br><br>
+
+        <label for="meter_type">Meter Type:</label>
+        <select id="meter_type" name="meter_type">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="failed_system">Failed System:</label>
+        <select id="failed_system" name="failed_system">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="failed_function">Failed Function:</label>
+        <select id="failed_function" name="failed_function">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="failure_symptom">Failure Symptom:</label>
+        <select id="failure_symptom" name="failure_symptom">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="failure_fault">Failure Fault:</label>
+        <select id="failure_fault" name="failure_fault">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="breakdown">Breakdown? (Y/N):</label>
+        <select id="breakdown" name="breakdown">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="planned_date">Planned Date to repair:</label>
+        <input type="date" id="planned_date" name="planned_date">
+        <br><br>
+
+        <label for="planned_time">Planned Time to repair:</label>
+		<input id="planned_time" type="time" name="planned_time" value="12:00" />
+        </select>
+        <br><br>
+
+        <label for="work_order_type">Work Order Type:</label>
+        <select id="work_order_type" name="work_order_type">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="downtime_category">Downtime Category:</label>
+        <select id="downtime_category" name="downtime_category">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="location">Location of breakdown:</label>
+        <select id="location" name="location">
+
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+<!-- This can be calculated given the failure date and repair date
+        <label for="down_time">Down Time (hrs):</label>
+		<input type="number" id="down_time" name="down_time" min="1" max="4">
+        </input>
+        <br><br>
+-->
+        <label for="ts_duration">TS Duration:</label>
+        <input type="number" id="ts_duration" name="ts_duration" min="1" max="4">
+        </input>
+        <br><br>
+
+        <label for="part_description">Part Description:</label>
+        <input type="text" id="part_description" name="part_description">
+        <br><br>
+
+        <label for="part_number">Part Number:</label>
+        <input type="text" id="part_number" name="part_number">
+        <br><br>
+
+        <label for="part_sn">Part S/N (if applicable):</label>
+        <input type="text" id="part_sn" name="part_sn">
+        <br><br>
+
+        <label for="qty_failed_parts">Qty Failed Parts:</label>
+        <input type="number" id="qty_failed_parts" name="qty_failed_parts" min="1" max="2">
+        </input>
+        <br><br>
+
+        <label for="qty_suspected_parts">Qty Suspected Parts:</label>
+        <input type="number" id="qty_suspected_parts" name="qty_suspected_parts" min="1" max="2">
+        </input>
+        <br><br>
+
+        <label for="condition_on_replaced_parts">Condition on Replaced Parts:</label>
+        <select id="condition_on_replaced_parts" name="condition_on_replaced_parts">
+            <option value="optionA">Option A</option>
+            <option value="optionB">Option B</option>
+            <option value="optionC">Option C</option>
+        </select>
+        <br><br>
+
+        <label for="part_cost">Part Cost:</label>
+        <input type="number" id="part_cost" name="part_cost" min="1" max="7">
+        </input>
+        <br><br>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <button type="button" onclick="saveData()">Save Data</button>
+    </form>
+
+    <script src="save-data.js"></script>
+</body>
+</html>
+
